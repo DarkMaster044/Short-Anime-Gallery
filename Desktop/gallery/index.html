@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeGallery</title>
+<style>
+    body{
+        background: #222;
+        margin-top: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+
+    }
+    .thumbnails img{
+        height: 80px;
+        border: 4px, solid, #555;
+        padding: 1px;
+        margin: 0 10px 10px 0;
+    }
+    .thumbnails img:hover{
+        border: 4px solid chocolate;
+    }
+    .preview img{
+        border: 4px solid #444;
+        padding: 1px;
+        width: 90%;
+    }
+</style>
+</head>
+<body>
+    <div id="container" align="center">
+        <h1>MY WEB PAGE GALLERY</h1>
+        <br>
+        <div class="thumbnails">
+            <img onmouseover="preview.src=img1.src" name="img1" src="img/img1.jpg">
+            <img onmouseover="preview.src=img2.src" name="img2" src="img/img2.jpg">
+            <img onmouseover="preview.src=img3.src" name="img3" src="img/img3.jpg">
+            <img onmouseover="preview.src=img4.src" name="img4" src="img/img4.jpg">
+            <img onmouseover="preview.src=img5.src" name="img5" src="img/img5.jpg">
+            <img onmouseover="preview.src=img6.src" name="img6" src="img/img6.jpg">
+        </div>
+        <br>
+        <div class="preview" align="center">
+<img name="preview" src="img/img1.jpg">
+
+        </div>
+    </div>
+</body>
+</html>
